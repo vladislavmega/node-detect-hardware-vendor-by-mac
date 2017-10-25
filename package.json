@@ -1,6 +1,6 @@
 {
   "name": "detect-hardware-vendor-by-mac",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Detect hardware device vendor by mac address",
   "main": "index.js",
   "repository": {

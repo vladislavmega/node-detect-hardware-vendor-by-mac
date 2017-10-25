@@ -4,11 +4,11 @@ https://www.npmjs.com/package/detect-hardware-vendor-by-mac
 
 installation:
 
-`npm install node-detect-hardware-vendor-by-mac`
+`npm install detect-hardware-vendor-by-mac`
 
 or
  
-`yarn add node-detect-hardware-vendor-by-mac`
+`yarn add detect-hardware-vendor-by-mac`
 
 usage: 
  
