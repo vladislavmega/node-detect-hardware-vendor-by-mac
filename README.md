@@ -1,0 +1,1 @@
+# node-detect-hardware-vendor-by-mac
