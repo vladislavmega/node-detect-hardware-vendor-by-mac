@@ -1,5 +1,6 @@
-# node-detect-hardware-vendor-by-mac
+# detect-hardware-vendor-by-mac
 Detect hardware device vendor by mac address
+https://www.npmjs.com/package/detect-hardware-vendor-by-mac
 
 installation:
 
@@ -11,7 +12,7 @@ or
 
 usage: 
  
-`var detectByMac = require('node-detect-hardware-vendor-by-mac');
+`var detectByMac = require('detect-hardware-vendor-by-mac');
 detectByMac('dc:0b:34:a7:92:31'); // {key: 'dc:0b:34:a7:92:31', shortTitle: 'LgElectr', fullTitle: ' LG Electronics (Mobile Communications)'}`
   
 base taken from:
