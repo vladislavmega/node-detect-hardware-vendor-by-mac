@@ -13,7 +13,7 @@ var macBase = macBaseRaw.split(/\r?\n/).map(function (line) {
     return {
         key: splitedLine[0].toLowerCase(),
         shortTitle: splitedLine[1],
-        fullTitle: fullTitle,
+        fullTitle: fullTitle.trim(),
     }
 });
 
