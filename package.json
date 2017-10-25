@@ -1,0 +1,25 @@
+{
+  "name": "detect-hardware-vendor-by-mac",
+  "version": "1.0.0",
+  "description": "Detect hardware device vendor by mac address",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladislavmega/node-detect-hardware-vendor-by-mac.git"
+  },
+  "keywords": [
+    "mac",
+    "hardware",
+    "detect",
+    "vendor"
+  ],
+  "author": "vladislavmega@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladislavmega/node-detect-hardware-vendor-by-mac/issues"
+  },
+  "homepage": "https://github.com/vladislavmega/node-detect-hardware-vendor-by-mac#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
