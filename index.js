@@ -3,7 +3,10 @@ var _ = require('lodash');
 var macBase = JSON.parse(fs.readFileSync(__dirname + '/base.json', {encoding: 'utf-8'}));
 
 module.exports = function(macAddress){
-    this.macs = macBase;
+    var mac = macAddress || '';
+    var macRegExp = /(([0-9A-Fa-f][0-9A-Fa-f][-:]){5}[0-9A-Fa-f][0-9A-Fa-f])|(([0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f].){2}[0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f])/;
+    if (!macRegExp.test(mac)) return {key: mac, vendorMacPrefix: '', shortTitle: '', fullTitle: ''};
+
     var macSplit = macAddress.toLowerCase().split(':');
     var mac5 = macSplit.reduce(function(prev, current, index) {
         return (index <5) ? prev + ':'+ current : prev
