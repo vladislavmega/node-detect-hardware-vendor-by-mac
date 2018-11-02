@@ -7,7 +7,7 @@ module.exports = function(macAddress){
     var macRegExp = /(([0-9A-Fa-f][0-9A-Fa-f][-:]){5}[0-9A-Fa-f][0-9A-Fa-f])|(([0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f].){2}[0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f][0-9A-Fa-f])/;
     if (!macRegExp.test(mac)) return {key: mac, vendorMacPrefix: '', shortTitle: '', fullTitle: ''};
 
-    var macSplit = macAddress.toLowerCase().split(':');
+    var macSplit = macAddress.toLowerCase().replace(/-/g, ':').split(':');
     var mac5 = macSplit.reduce(function(prev, current, index) {
         return (index <5) ? prev + ':'+ current : prev
     });
